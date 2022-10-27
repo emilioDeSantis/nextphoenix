@@ -58,7 +58,7 @@ function Home() {
                 width={2048}
                 height={2048}
             />
-            {/* <NumberedList
+            <NumberedList
                 title="The Phoenix Advantage"
                 list={[
                     {
@@ -78,7 +78,7 @@ function Home() {
                         text: "Our employees can help clear debris, remove trash, move materials, and even do demolition.",
                     },
                 ]}
-            /> */}
+            />
             <ul>
                 <ArrowButton href="services">Hire Phoenix</ArrowButton>
                 <Link href="services">
@@ -99,7 +99,7 @@ function Home() {
                 width={2048}
                 height={2048}
             />
-            {/* <NumberedList
+            <NumberedList
                 title="What we Offer our Employees"
                 list={[
                     {
@@ -119,7 +119,7 @@ function Home() {
                         text: "Phoenix carries complete workman’s comp. and general liability coverage at all times.",
                     },
                 ]}
-            /> */}
+            />
             <ul>
                 <ArrowButton href="apply">Apply Today</ArrowButton>
                 <Link href="apply">
