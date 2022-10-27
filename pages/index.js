@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-// import NumberedList from "./components/NumberedList";
+import NumberedList from "./components/NumberedList";
 
 function Home() {
     return (
