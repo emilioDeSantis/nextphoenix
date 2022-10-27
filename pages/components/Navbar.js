@@ -69,7 +69,6 @@ export default function Navbar() {
                                 key={singleRoute}>
                                     <NavigationLink
                                         setOpen={setOpen}
-                                        key={singleRoute}
                                         href={`/${singleRoute}`}
                                         text={singleRoute}
                                         router={router}

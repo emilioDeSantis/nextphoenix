@@ -66,16 +66,16 @@ function Home() {
                         text: "Depending on your needs we can send workers to your site in as little as 1 day.",
                     },
                     {
-                        title: "Labor Right Away",
-                        text: "Depending on your needs we can send workers to your site in as little as 1 day.",
+                        title: "Saftey Training",
+                        text: "You do not have to worry about training. All Phoenix employees take a 10 hour OSHA training course.",
                     },
                     {
-                        title: "Labor Right Away",
-                        text: "Depending on your needs we can send workers to your site in as little as 1 day.",
+                        title: "Cost Effective",
+                        text: "We offer high quality competative laborers at an inexpensive rate.",
                     },
                     {
-                        title: "Labor Right Away",
-                        text: "Depending on your needs we can send workers to your site in as little as 1 day.",
+                        title: "Versitle Workers",
+                        text: "Our employees can help clear debris, remove trash, move materials, and even do demolition.",
                     },
                 ]}
             />
@@ -107,16 +107,16 @@ function Home() {
                         text: "Phoenix pays well. You can work for us full time and make extra working overtime hours.",
                     },
                     {
-                        title: "Competative Wages",
-                        text: "Phoenix pays well. You can work for us full time and make extra working overtime hours.",
+                        title: "Benefits Package",
+                        text: "We offer paid hollidays, vacation, health insurence and a 401K retirement plan.",
                     },
                     {
-                        title: "Competative Wages",
-                        text: "Phoenix pays well. You can work for us full time and make extra working overtime hours.",
+                        title: "Tradesmen Safety",
+                        text: "Safety of our tradesmen is our number one concern.",
                     },
                     {
-                        title: "Competative Wages",
-                        text: "Phoenix pays well. You can work for us full time and make extra working overtime hours.",
+                        title: "Insurance",
+                        text: "Phoenix carries complete workman’s comp. and general liability coverage at all times.",
                     },
                 ]}
             />
