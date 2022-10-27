@@ -1,14 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import NumberedList from "./components/NumberedList";
-import { color, dimension } from "./theme";
 
 function Home() {
     return (
         <main>
             <div
                 style={{
-                    height: dimension.navHeight,
+                    height: process.env.dimension.navHeight,
                 }}
             />
             <div
@@ -29,7 +28,7 @@ function Home() {
             <h1
                 style={{
                     marginTop: "86vw",
-                    marginInline: dimension.sideMargin,
+                    marginInline: process.env.dimension.sideMargin,
                 }}
             >
                 GENERAL LABOR SUPPLIER
@@ -39,7 +38,7 @@ function Home() {
                 style={{
                     justifyContent: "space-between",
                     gap: "0.4rem",
-                    paddingInline: dimension.sideMargin,
+                    paddingInline: process.env.dimension.sideMargin,
                     marginTop: '2rem',
                 }}
             >
@@ -186,12 +185,12 @@ function ArrowButton({ children, href }) {
                 href={href}
                 className="hstack"
                 style={{
-                    background: color.theme,
+                    background: process.env.color.theme,
                     width: "100%",
                     justifyContent: "center",
                     gap: "0.6rem",
                     paddingBlock: "0.6rem",
-                    borderRadius: dimension.borderRadius,
+                    borderRadius: process.env.dimension.borderRadius,
                 }}
             >
                 <div

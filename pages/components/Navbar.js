@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { Fragment, useState } from "react";
-import { dimension } from "../theme";
 
 const navigationRoutes = ["home", "services", "apply", "contact"];
 
@@ -19,12 +18,12 @@ export default function Navbar() {
                     background: "black",
                     width: "100vw",
                     alignItems: "center",
-                    height: dimension.navHeight,
+                    height: process.env.dimension.navHeight,
                 }}
             >
                 <div
                     style={{
-                        marginLeft: dimension.sideMargin,
+                        marginLeft: process.env.dimension.sideMargin,
                     }}
                 >
                     Phoenix
@@ -82,8 +81,8 @@ export default function Navbar() {
 
                     <button
                         style={{
-                            height: dimension.navHeight,
-                            paddingInline: dimension.sideMargin,
+                            height: process.env.dimension.navHeight,
+                            paddingInline: process.env.dimension.sideMargin,
                             display: "flex",
                             alignItems: "center",
                             background: '#65f',
@@ -143,8 +142,8 @@ function HamburgerButton({ setOpen }) {
     return (
         <button
             style={{
-                height: dimension.navHeight,
-                paddingInline: dimension.sideMargin,
+                height: process.env.dimension.navHeight,
+                paddingInline: process.env.dimension.sideMargin,
                 display: "flex",
                 alignItems: "center",
             }}
