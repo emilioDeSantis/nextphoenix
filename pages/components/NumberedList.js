@@ -1,3 +1,13 @@
+export default function NumberedList() {
+    return (
+        <div className='container'>
+            
+        </div>
+    )
+}
+
+
+
 // import { Fragment } from "react";
 
 // export default function NumberedList({ title, list }) {
