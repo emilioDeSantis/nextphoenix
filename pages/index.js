@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import NumberedList from "./components/NumberedList";
+// import NumberedList from "./components/NumberedList";
 
 function Home() {
     return (
@@ -99,7 +99,7 @@ function Home() {
                 width={2048}
                 height={2048}
             />
-            <NumberedList
+            {/* <NumberedList
                 title="What we Offer our Employees"
                 list={[
                     {
@@ -119,7 +119,7 @@ function Home() {
                         text: "Phoenix carries complete workman’s comp. and general liability coverage at all times.",
                     },
                 ]}
-            />
+            /> */}
             <ul>
                 <ArrowButton href="apply">Apply Today</ArrowButton>
                 <Link href="apply">
