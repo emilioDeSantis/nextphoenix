@@ -9,8 +9,7 @@ export default function NumberedList({ title, list }) {
             {list?.map((element, index) => {
                 return (
                     <Fragment key={element.title}>
-                        <div>{element.title}</div>
-                        {/* <section className="container">
+                        <section className="container">
                             <div>{"0" + (index + 1)}</div>
                             <div>
                                 <h4>{element.title}</h4>
@@ -23,7 +22,7 @@ export default function NumberedList({ title, list }) {
                                 }
                             `}</style>
                         </section>
-                        <hr /> */}
+                        <hr />
                     </Fragment>
                 );
             })}
