@@ -84,7 +84,6 @@ export default function Navbar() {
                             paddingInline: process.env.dimension.sideMargin,
                             display: "flex",
                             alignItems: "center",
-                            background: '#65f',
                             border: 'none'
                         }}
                         onClick={() => {

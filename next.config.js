@@ -10,6 +10,7 @@ const nextConfig = {
         dimension: {
             sideMargin: "0.8rem",
             navHeight: "3rem",
+            sectionMargin: "6rem",
             borderRadius: "0.2rem",
         },
     },
