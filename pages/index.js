@@ -31,7 +31,7 @@ function Home() {
             </div>
             {/* </div> */}
             <section className="services-preview-container">
-                {/* <div className="card vstack"> */}
+                <div className="card vstack">
                     <h2>Phoenix is a Construction Labor Provider</h2>
                     {/* <p
                     style={{
@@ -53,7 +53,7 @@ function Home() {
                             Phoenix workers help fill in the gaps
                         </BulletPointSmall>
                     </div>
-                {/* </div> */}
+                </div>
                 {/* <div className="card vastack"> */}
                     <div className="numbered-list-and-image-container">
                         <h3 className="numbered-list-title">
@@ -133,7 +133,7 @@ function Home() {
             </section>
 
             <section className="services-preview-container">
-                {/* <div className="card vstack"> */}
+                <div className="card vstack">
                     <h2>Looking for a Job?</h2>
                     <div className="services-bullet-container vstack">
                         <BulletPointSmall>
@@ -148,7 +148,7 @@ function Home() {
                             Phoenix has a great benefits package
                         </BulletPointSmall>
                     </div>
-                {/* </div> */}
+                </div>
                 {/* <div className="card vastack"> */}
                     <div className="numbered-list-and-image-container">
                         <h3 className="numbered-list-title">
