@@ -54,7 +54,7 @@ function Home() {
                         </BulletPointSmall>
                     </div>
                 {/* </div> */}
-                <div className="card vastack">
+                {/* <div className="card vastack"> */}
                     <div className="numbered-list-and-image-container">
                         <h3 className="numbered-list-title">
                             The Phoenix Advantage
@@ -129,7 +129,7 @@ function Home() {
                             </ul>
                         </div>
                     </div>
-                </div>
+                {/* </div> */}
             </section>
 
             <section className="services-preview-container">
@@ -149,7 +149,7 @@ function Home() {
                         </BulletPointSmall>
                     </div>
                 {/* </div> */}
-                <div className="card vastack">
+                {/* <div className="card vastack"> */}
                     <div className="numbered-list-and-image-container">
                         <h3 className="numbered-list-title">
                             What we Offer our Employees
@@ -222,7 +222,7 @@ function Home() {
                             </ul>
                         </div>
                     </div>
-                </div>
+                {/* </div> */}
             </section>
             <div>Phoenix</div>
             <section>
