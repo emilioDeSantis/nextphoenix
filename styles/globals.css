@@ -61,8 +61,7 @@ h2 {
     font-weight: 700;
     line-height: 130%;
     margin: 0;
-    margin-bottom: 7vw;
-    margin-top: 20vw;
+    margin-block: 6vw;
 }
 
 h3 {
@@ -71,6 +70,7 @@ h3 {
     line-height: 130%;
     margin: 0;
     margin-block: 5vw;
+    margin-top: 20vw;
 }
 
 h4 {
