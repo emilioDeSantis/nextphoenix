@@ -8,26 +8,27 @@ export default function Bullet() {
                 position: "relative",
                 justifyContent: "center",
                 alignItems: "center",
+                position: "absolute",
             }}
         >
             <div
                 style={{
-                    background: "#44f",
-                    width: "60%",
-                    height: "60%",
+                    border: `0.1rem solid ${process.env.color.theme}`,
                     borderRadius: "1rem",
-                    boxShadow: "0 0 1rem  #44f",
+                    width: "100%",
+                    height: "100%",
+                    boxShadow: `0 0 0.4rem  ${process.env.color.theme}`,
+                    background: "#0000",
                 }}
             ></div>
             <div
                 style={{
-                    border: "0.1rem solid #44f",
+                    background: process.env.color.theme,
+                    width: "60%",
+                    height: "60%",
                     borderRadius: "1rem",
-                    width: "100%",
-                    height: "100%",
                     position: "absolute",
-                    boxShadow: "0 0 0.4rem  #44f",
-                    background: "none",
+                    boxShadow: `0 0 1rem  ${process.env.color.theme}`,
                 }}
             ></div>
         </div>
