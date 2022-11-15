@@ -45,12 +45,15 @@ function Home() {
                     <div className="services-bullet-container vstack">
                         <BulletPointSmall>
                             For sites that need extra man power
+                            {/* FOR SITES THAT NEED EXTRA MAN POWER */}
                         </BulletPointSmall>
                         <BulletPointSmall>
                             Projects have fluctuating labor needs
+                            {/* PROJECTS HAVE FLUCTUATING LABOR NEEDS */}
                         </BulletPointSmall>
                         <BulletPointSmall>
                             Phoenix workers help fill in the gaps
+                            {/* PHOENIX WORKERS HELP FILL IN THE GAPS */}
                         </BulletPointSmall>
                     </div>
                 {/* </div> */}
@@ -61,7 +64,7 @@ function Home() {
                         </h3>
                         <div className="services-preview-image-container">
                             <Image
-                                src="/workerstanding.png"
+                                src="/george.png"
                                 alt="worker"
                                 layout="responsive"
                                 width={2048}
@@ -95,7 +98,7 @@ function Home() {
                                 <ArrowButton href="apply">
                                     Hire Phoenix
                                 </ArrowButton>
-                                <Link href="services">
+                                {/* <Link href="services">
                                     <a
                                         className="arrow-button hstack"
                                         style={{
@@ -125,7 +128,7 @@ function Home() {
                                             />
                                         </svg>
                                     </a>
-                                </Link>
+                                </Link> */}
                             </ul>
                         </div>
                     </div>

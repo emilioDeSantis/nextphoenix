@@ -13,8 +13,8 @@ export default function Services() {
                     marginBottom: "1.2rem",
                 }}
             >
-                {/* HOW TO HIRE PHOENIX */}
-                How to Hire Phoenix
+                HOW TO HIRE PHOENIX
+                {/* How to Hire Phoenix */}
             </h1>
             <div className="info-content-container">
                 <div className="info-content-image-container">
