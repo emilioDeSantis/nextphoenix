@@ -64,7 +64,7 @@ function Home() {
                         </h3>
                         <div className="services-preview-image-container image-container">
                             <Image
-                                src="/pipe.png"
+                                src="/pipe2.png"
                                 alt="worker"
                                 layout="responsive"
                                 width={2048}

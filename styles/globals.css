@@ -1,6 +1,5 @@
 html,
 :root {
-    /* --theme-color: #1e13ff; */
     --theme-color: #1c4dff;
     --background-color: #131314;
     --side-margin: 3vw;
@@ -96,7 +95,7 @@ html {
 }
 body {
     color: white;
-    background: #131314;
+    background: var(--background-color);
 }
 /* } */
 
