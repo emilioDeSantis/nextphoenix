@@ -70,7 +70,7 @@ h3 {
     font-weight: 500;
     line-height: 130%;
     margin: 0;
-    margin-bottom: 5vw;
+    margin-bottom: 12vw;
     margin-top: 20vw;
 }
 
@@ -114,6 +114,11 @@ body {
     display: none;
 }
 
+
+.services-header {
+     margin-top: 16vw;
+     margin-bottom: 12vw;
+}
 .card {
     background: black;
     padding-inline: 4vw;
@@ -121,15 +126,54 @@ body {
     margin-top: 16vw;
 }
 
+.phone-container {
+    width: 100%;
+    color: var(--theme-color);
+}
+
+.phone-number {
+    font-size: 5vw;
+    margin-left: 3vw;
+    white-space: nowrap;
+}
+.phone-icon {
+    height: 5vw
+}
+
+.form-button {
+    gap: 1vw;
+    color: white;
+    width: 100%;
+    margin-right: 5vw;
+}
+
+.info-content-image-container {
+    margin-inline: calc(-1 * var(--side-margin));
+}
+
+.image-container {
+    margin-inline: calc(-1 * var(--side-margin));
+}
+
 .info-content-container {
     flex-direction: column;
     display: flex;
 }
 
-.info-content-sub-container {
-    margin-top: 0.5rem;
+.servics-contact-container {
+    margin-top: 12vw;
+    margin-bottom: 30vw;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
+.services-bullet-container {
+    margin-bottom: 25vw;
+}
+
+.theme-color {
+    color: var(--theme-color);
+}
 .logo {
     margin-left: var(--side-margin);
     font-size: 8vw;
@@ -167,28 +211,30 @@ body {
 .small-bullet-text {
     margin-left: 4vw;
     margin-block: 0;
-    opacity: 60%;
+    opacity: 80%;
     font-size: 4.2vw;
 }
 
 .small-bullet {
     background: var(--theme-color);
-    width: 2.8vw;
+    /* width: 2.8vw; */
+    min-width: 2.8vw;
     aspect-ratio: 1;
     border-radius: 100%;
     margin-top: 1.2vw;
 }
 
-.services-bullet-container {
+.services-info-bullet-container {
     margin-top: 3vw;
     margin-bottom: 6vw;
 }
+
 
 .arrow-button {
     background: var(--theme-color);
     width: 100%;
     justify-content: center;
-    gap: 0.6rem;
+    gap: 2vw;
     padding-block: var(--button-padding-block);
     border-radius: var(--border-radius);
 }
@@ -259,8 +305,8 @@ body {
 }
 
 .light-container {
-    color: black;
-    background: white;
+    /* color: black;
+    background: white; */
     position: absolute;
     padding-inline: var(--side-margin);
 }
@@ -281,7 +327,7 @@ body {
 
 .services-preview-container {
     padding-inline: var(--side-margin);
-    padding-top: 10vw;
+    padding-top: 24vw;
 }
 
 .accent-line-top {
@@ -458,6 +504,10 @@ body {
 
     .info-content-image-container {
         width: 48vw;
+    }
+
+    .image-container {
+        margin-inline: 0;
     }
     .numbered-list-and-buttons-container {
         /* width: auto; */

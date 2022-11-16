@@ -42,7 +42,7 @@ function Home() {
                     power. Phoenix workers can help fill in the gaps for a
                     project that has a fluctuating need for labor.
                 </p> */}
-                    <div className="services-bullet-container vstack">
+                    <div className="services-info-bullet-container vstack">
                         <BulletPointSmall>
                             For sites that need extra man power
                             {/* FOR SITES THAT NEED EXTRA MAN POWER */}
@@ -62,9 +62,9 @@ function Home() {
                         <h3 className="numbered-list-title">
                             The Phoenix Advantage
                         </h3>
-                        <div className="services-preview-image-container">
+                        <div className="services-preview-image-container image-container">
                             <Image
-                                src="/george.png"
+                                src="/pipe.png"
                                 alt="worker"
                                 layout="responsive"
                                 width={2048}
@@ -138,7 +138,7 @@ function Home() {
             <section className="services-preview-container">
                 {/* <div className="card vstack"> */}
                     <h2>Looking for a Job?</h2>
-                    <div className="services-bullet-container vstack">
+                    <div className="services-info-bullet-container vstack">
                         <BulletPointSmall>
                             Phoenix is always looking for quality tradesmen to
                             add to our team
@@ -157,7 +157,7 @@ function Home() {
                         <h3 className="numbered-list-title">
                             What we Offer our Employees
                         </h3>
-                        <div className="services-preview-image-container">
+                        <div className="services-preview-image-container image-container">
                             <Image
                                 src="/timidface.png"
                                 alt="worker"
@@ -191,7 +191,7 @@ function Home() {
 
                             <ul className="hstack arrow-buttons-container">
                             <ArrowButton href="apply">Apply Today</ArrowButton>
-                            <Link href="apply">
+                            {/* <Link href="apply">
                                 <a
                                     className="arrow-button hstack"
                                     style={{
@@ -221,7 +221,7 @@ function Home() {
                                         />
                                     </svg>
                                 </a>
-                            </Link>
+                            </Link> */}
                             </ul>
                         </div>
                     </div>
