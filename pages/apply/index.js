@@ -15,7 +15,7 @@ export default function Apply() {
             <div className="info-content-container">
                 <div className="info-content-image-container image-container">
                     <Image
-                        src="/sunset.png"
+                        src="/pipe2.png"
                         alt="workers1"
                         layout="responsive"
                         width={2048}

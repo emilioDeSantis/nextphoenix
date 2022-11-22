@@ -32,8 +32,8 @@ function Home() {
             {/* </div> */}
             <section className="services-preview-container">
                 {/* <div className="card vstack"> */}
-                    <h2>Phoenix is a Construction Labor Provider</h2>
-                    {/* <p
+                <h2>Phoenix is a Construction Labor Provider</h2>
+                {/* <p
                     style={{
                         marginBottom: "25vw",
                     }}
@@ -42,63 +42,61 @@ function Home() {
                     power. Phoenix workers can help fill in the gaps for a
                     project that has a fluctuating need for labor.
                 </p> */}
-                    <div className="services-info-bullet-container vstack">
-                        <BulletPointSmall>
-                            For sites that need extra man power
-                            {/* FOR SITES THAT NEED EXTRA MAN POWER */}
-                        </BulletPointSmall>
-                        <BulletPointSmall>
-                            Projects have fluctuating labor needs
-                            {/* PROJECTS HAVE FLUCTUATING LABOR NEEDS */}
-                        </BulletPointSmall>
-                        <BulletPointSmall>
-                            Phoenix workers help fill in the gaps
-                            {/* PHOENIX WORKERS HELP FILL IN THE GAPS */}
-                        </BulletPointSmall>
-                    </div>
+                <div className="services-info-bullet-container vstack">
+                    <BulletPointSmall>
+                        For sites that need extra man power
+                        {/* FOR SITES THAT NEED EXTRA MAN POWER */}
+                    </BulletPointSmall>
+                    <BulletPointSmall>
+                        Projects have fluctuating labor needs
+                        {/* PROJECTS HAVE FLUCTUATING LABOR NEEDS */}
+                    </BulletPointSmall>
+                    <BulletPointSmall>
+                        Phoenix workers help fill in the gaps
+                        {/* PHOENIX WORKERS HELP FILL IN THE GAPS */}
+                    </BulletPointSmall>
+                </div>
                 {/* </div> */}
                 {/* <div className="card vastack"> */}
-                    <div className="numbered-list-and-image-container">
-                        <h3 className="numbered-list-title">
-                            The Phoenix Advantage
-                        </h3>
-                        <div className="services-preview-image-container image-container">
-                            <Image
-                                src="/pipe2.png"
-                                alt="worker"
-                                layout="responsive"
-                                width={2048}
-                                height={2048}
-                            />
-                        </div>
-                        <div className="numbered-list-and-buttons-container">
-                            <NumberedList
-                                // title="The Phoenix Advantage"
-                                list={[
-                                    {
-                                        title: "Labor Right Away",
-                                        text: "Depending on your needs we can send workers to your site in as little as 1 day.",
-                                    },
-                                    {
-                                        title: "Saftey Training",
-                                        text: "You do not have to worry about training. All Phoenix employees take a 10 hour OSHA course.",
-                                    },
-                                    {
-                                        title: "Cost Effective",
-                                        text: "We offer high quality competative laborers at an inexpensive rate.",
-                                    },
-                                    {
-                                        title: "Versitle Workers",
-                                        text: "Our employees can help clear debris, remove trash, move materials, and even do demolition.",
-                                    },
-                                ]}
-                            />
+                <div className="numbered-list-and-image-container">
+                    <h3 className="numbered-list-title">
+                        The Phoenix Advantage
+                    </h3>
+                    <div className="services-preview-image-container image-container">
+                        <Image
+                            src="/sunset.png"
+                            alt="worker"
+                            layout="responsive"
+                            width={2048}
+                            height={2048}
+                        />
+                    </div>
+                    <div className="numbered-list-and-buttons-container">
+                        <NumberedList
+                            // title="The Phoenix Advantage"
+                            list={[
+                                {
+                                    title: "Labor Right Away",
+                                    text: "Depending on your needs we can send workers to your site in as little as 1 day.",
+                                },
+                                {
+                                    title: "Saftey Training",
+                                    text: "You do not have to worry about training. All Phoenix employees take a 10 hour OSHA course.",
+                                },
+                                {
+                                    title: "Cost Effective",
+                                    text: "We offer high quality competative laborers at an inexpensive rate.",
+                                },
+                                {
+                                    title: "Versitle Workers",
+                                    text: "Our employees can help clear debris, remove trash, move materials, and even do demolition.",
+                                },
+                            ]}
+                        />
 
-                            <ul className="hstack arrow-buttons-container">
-                                <ArrowButton href="apply">
-                                    Hire Phoenix
-                                </ArrowButton>
-                                {/* <Link href="services">
+                        <ul className="hstack arrow-buttons-container">
+                            <ArrowButton href="apply">Hire Phoenix</ArrowButton>
+                            {/* <Link href="services">
                                     <a
                                         className="arrow-button hstack"
                                         style={{
@@ -129,67 +127,67 @@ function Home() {
                                         </svg>
                                     </a>
                                 </Link> */}
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
+                </div>
                 {/* </div> */}
             </section>
 
             <section className="services-preview-container">
                 {/* <div className="card vstack"> */}
-                    <h2>Looking for a Job?</h2>
-                    <div className="services-info-bullet-container vstack">
-                        <BulletPointSmall>
-                            Phoenix is always looking for quality tradesmen to
-                            add to our team
-                        </BulletPointSmall>
-                        <BulletPointSmall>
-                            Employees are full-time workers and receive
-                            competitive pay
-                        </BulletPointSmall>
-                        <BulletPointSmall>
-                            Phoenix has a great benefits package
-                        </BulletPointSmall>
-                    </div>
+                <h2>Looking for a Job?</h2>
+                <div className="services-info-bullet-container vstack">
+                    <BulletPointSmall>
+                        Phoenix is always looking for quality tradesmen to add
+                        to our team
+                    </BulletPointSmall>
+                    <BulletPointSmall>
+                        Employees are full-time workers and receive competitive
+                        pay
+                    </BulletPointSmall>
+                    <BulletPointSmall>
+                        Phoenix has a great benefits package
+                    </BulletPointSmall>
+                </div>
                 {/* </div> */}
                 {/* <div className="card vastack"> */}
-                    <div className="numbered-list-and-image-container">
-                        <h3 className="numbered-list-title">
-                            What we Offer our Employees
-                        </h3>
-                        <div className="services-preview-image-container image-container">
-                            <Image
-                                src="/timidface.png"
-                                alt="worker"
-                                layout="responsive"
-                                width={2048}
-                                height={2048}
-                            />
-                        </div>
-                        <div className="numbered-list-and-buttons-container">
-                            <NumberedList
-                                // title="The Phoenix Advantage"
-                                list={[
-                                    {
-                                        title: "Competative Wages",
-                                        text: "Phoenix pays well. You can work for us full time and make extra working overtime hours.",
-                                    },
-                                    {
-                                        title: "Benefits Package",
-                                        text: "We offer paid hollidays, vacation, health insurence and a 401K retirement plan.",
-                                    },
-                                    {
-                                        title: "Tradesmen Safety",
-                                        text: "Safety of our tradesmen is our number one concern.",
-                                    },
-                                    {
-                                        title: "Insurance",
-                                        text: "Phoenix carries complete workman’s comp. and general liability coverage at all times.",
-                                    },
-                                ]}
-                            />
+                <div className="numbered-list-and-image-container">
+                    <h3 className="numbered-list-title">
+                        What we Offer our Employees
+                    </h3>
+                    <div className="services-preview-image-container image-container">
+                        <Image
+                            src="/timidface.png"
+                            alt="worker"
+                            layout="responsive"
+                            width={2048}
+                            height={2048}
+                        />
+                    </div>
+                    <div className="numbered-list-and-buttons-container">
+                        <NumberedList
+                            // title="The Phoenix Advantage"
+                            list={[
+                                {
+                                    title: "Competative Wages",
+                                    text: "Phoenix pays well. You can work for us full time and make extra working overtime hours.",
+                                },
+                                {
+                                    title: "Benefits Package",
+                                    text: "We offer paid hollidays, vacation, health insurence and a 401K retirement plan.",
+                                },
+                                {
+                                    title: "Tradesmen Safety",
+                                    text: "Safety of our tradesmen is our number one concern.",
+                                },
+                                {
+                                    title: "Insurance",
+                                    text: "Phoenix carries complete workman’s comp. and general liability coverage at all times.",
+                                },
+                            ]}
+                        />
 
-                            <ul className="hstack arrow-buttons-container">
+                        <ul className="hstack arrow-buttons-container">
                             <ArrowButton href="apply">Apply Today</ArrowButton>
                             {/* <Link href="apply">
                                 <a
@@ -222,59 +220,55 @@ function Home() {
                                     </svg>
                                 </a>
                             </Link> */}
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
+                </div>
                 {/* </div> */}
             </section>
-            <div>Phoenix</div>
-            <section>
-                <nav>
-                    <h3>INFORMATION</h3>
-                    <Link href="services">
-                        <a>HOW TO HIRE PHOENIX</a>
-                    </Link>
-                    <Link href="services">
-                        <a>HOW PHOENIX WORKS</a>
-                    </Link>
-                    <Link href="apply">
-                        <a>HOW TO JOIN PHOENIX</a>
-                    </Link>
-                </nav>
-                <nav>
-                    <h3>FORMS</h3>
-                    <Link href="services">
-                        <a>HIRE PHOENIX</a>
-                    </Link>
-                    <Link href="apply">
-                        <a>APPLY ONLINE</a>
-                    </Link>
-                </nav>
+            <section className="footer-container">
+                <div className="hstack footer-logo-container">
+                    <div className="logo">Phoenix</div>
+                </div>
+                <section className="hstack footer-links-container">
+                    <nav className="vstack footer-info-container">
+                        <h3 className="footer-header">INFORMATION</h3>
+                        <Link href="services">
+                            <a className="footer-text">HOW TO HIRE PHOENIX</a>
+                        </Link>
+                        <Link href="services">
+                            <a className="footer-text">HOW PHOENIX WORKS</a>
+                        </Link>
+                        <Link href="apply">
+                            <a className="footer-text">HOW TO JOIN PHOENIX</a>
+                        </Link>
+                    </nav>
+                    <nav className="vstack footer-forms-container">
+                        <h3 className="footer-header">FORMS</h3>
+                        <Link href="services">
+                            <a className="footer-text">HIRE PHOENIX</a>
+                        </Link>
+                        <Link href="apply">
+                            <a className="footer-text">APPLY ONLINE</a>
+                        </Link>
+                    </nav>
+                </section>
+                <section className="hstack footer-phone-container">
+                        <h3 className="footer-header">PHONE</h3>
+                        <p className="footer-text">1234-567-8900</p>
+                    </section>
+                <section className="hstack footer-contact-container">
+                    <section className="section">
+                        <h3 className="footer-header">EMAIL</h3>
+                        <p className="footer-text">pheonix@gmail.com</p>
+                    </section>
+                    <section className="section">
+                        <h3 className="footer-header">HOURS</h3>
+                        <p className="footer-text">MON-FRI 8AM-6PM</p>
+                    </section>
+                </section>
+                <div className="footer-adress">165 Washington Street, Suite A, Winchester, MA 01890</div>
+                <div className="footer-adress">C PHOENIX CONSTRUCTION RECOURCES INCORPERATED 2022.</div>
             </section>
-            <section className="container">
-                <section className="section">
-                    <h3>PHONE</h3>
-                    <p>1234-567-8900</p>
-                </section>
-                <section className="section">
-                    <h3>EMAIL</h3>
-                    <p>pheonix@gmail.com</p>
-                </section>
-                <section className="section">
-                    <h3>HOURS</h3>
-                    <p>MON-FRI 8AM-6PM</p>
-                </section>
-                <style jsx>{`
-                    .container {
-                        display: flex;
-                        flex-direction: row;
-                    }
-                    .section {
-                    }
-                `}</style>
-            </section>
-            <div>165 Washington Street, Suite A, Winchester, MA 01890</div>
-            <div>C PHOENIX CONSTRUCTION RECOURCES INCORPERATED 2022.</div>
         </main>
     );
 }

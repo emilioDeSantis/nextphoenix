@@ -1,6 +1,7 @@
 html,
 :root {
     --theme-color: #1c4dff;
+    /* --theme-color: #ff4e32; */
     --background-color: #131314;
     --side-margin: 3vw;
     --nav-height: 11vw;
@@ -113,10 +114,67 @@ body {
     display: none;
 }
 
+.footer-container {
+    margin-inline: var(--side-margin);
+    margin-top: 25vw;
+    margin-bottom: 12vw;
+}
+
+.footer-logo-container {
+    justify-content: center;
+    margin-bottom: 18vw;
+}
+.footer-links-container {
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 12vw;
+}
+.footer-forms-container {
+    justify-content: start;
+}
+
+.footer-info-container {
+    justify-content: start;
+
+}
+
+.footer-header {
+    font-size: 4vw;
+    font-weight: 400;
+    margin-bottom: 5vw;
+    margin-top: 0;
+    opacity: 50%;
+}
+
+.footer-text {
+    font-size: 4vw;
+    margin-bottom: 5vw;
+    margin-top: 0;
+    opacity: 100%;
+}
+
+.footer-phone-container {
+    justify-content: space-between;
+    margin-bottom: 8vw;
+}
+
+.footer-contact-container {
+
+    justify-content: space-between;
+    
+    margin-bottom: 12vw;
+}
+.footer-adress {
+    font-size: 3vw;
+    font-weight: 400;
+    margin-bottom: 5vw;
+    margin-top: 0;
+    opacity: 50%;
+}
 
 .services-header {
      margin-top: 16vw;
-     margin-bottom: 12vw;
+     margin-bottom: 18vw;
 }
 .card {
     background: black;
@@ -152,6 +210,7 @@ body {
 
 .image-container {
     margin-inline: calc(-1 * var(--side-margin));
+    background-color: #25f5;
 }
 
 .info-content-container {
@@ -285,8 +344,8 @@ body {
 }
 
 .nav-bar-text {
-    padding-left: 16vw;
-    padding-right: 5vw;
+    padding-left: 21vw;
+    padding-right: 21vw;
     padding-block: 5vw;
     font-size: 4vw;
 }
