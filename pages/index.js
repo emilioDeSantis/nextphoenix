@@ -21,7 +21,7 @@ function Home() {
                 <div className="image-gradient" />
             </div>
             <div className="tagline-container">
-                <p className="tagline-prefice">New England's #1</p>
+                <p className="tagline-prefice">{"New England's #1"}</p>
                 <h1 className="tagline">GENERAL LABOR SUPPLIER</h1>
                 <ul className="hstack arrow-buttons-container">
                     <ArrowButton href="services">Hire Phoenix</ArrowButton>
