@@ -94,6 +94,7 @@ export default function Services() {
                                     className="w-6 h-6"
                                     style={{
                                         width: "100%",
+                                        aspectRatio: 1,
                                     }}
                                 >
                                     <path
