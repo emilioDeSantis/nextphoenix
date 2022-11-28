@@ -34,6 +34,7 @@ export default function Card({ smallText, bigText, index, name, href }) {
                                 className="w-6 h-6"
                                 style={{
                                     width: "100%",
+                                    aspectRatio: 1,
                                 }}
                             >
                                 <path
