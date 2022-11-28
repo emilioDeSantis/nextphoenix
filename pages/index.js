@@ -153,8 +153,7 @@ function Home() {
                 </div>
             </section>
             <div className="numbered-list-and-image-container">
-                <h3 className="numbered-list-title">Phoenix is always looking for quality tradesmen to add
-                        to our team</h3>
+                <h3 className="numbered-list-title">The Phoenix Advantage</h3>
                 <div className="numbered-list-line"></div>
                 <div className="numbered-list-and-image-sub-container">
                 <div className="services-preview-image-container image-container">
