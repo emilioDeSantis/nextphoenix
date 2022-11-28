@@ -32,7 +32,7 @@ function Home() {
                 <h2>Phoenix is a Construction Labor Provider</h2>
                 <div className="cards-container">
                     <Card
-                        smallText={"For sites thats need"}
+                        smallText={"For sites that need"}
                         bigText={"Extra Man Power."}
                         name={"AUXILIARY LABOR"}
                         index={"01"}
@@ -127,7 +127,7 @@ function Home() {
 
 
             <section className="landing-page-content-container">
-                <h2>Phoenix is a Construction Labor Provider</h2>
+                <h2>Looking for a Job?</h2>
                 <div className="cards-container">
                     <Card
                         smallText={"Phoenix is always looking for quality tradesmen to"}
@@ -153,7 +153,8 @@ function Home() {
                 </div>
             </section>
             <div className="numbered-list-and-image-container">
-                <h3 className="numbered-list-title">Looking for a Job?</h3>
+                <h3 className="numbered-list-title">Phoenix is always looking for quality tradesmen to add
+                        to our team</h3>
                 <div className="numbered-list-line"></div>
                 <div className="numbered-list-and-image-sub-container">
                 <div className="services-preview-image-container image-container">
