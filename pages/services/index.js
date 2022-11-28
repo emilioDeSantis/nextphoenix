@@ -147,7 +147,7 @@ export default function Services() {
                             OSHA Safety Training
                         </BulletPointSmall>
                         <BulletPointSmall>All Insurance</BulletPointSmall>
-                        <BulletPointSmall>Workman's Comp</BulletPointSmall>
+                        <BulletPointSmall>{"Workman's Comp"}</BulletPointSmall>
                         <BulletPointSmall>General Liability</BulletPointSmall>
                         <BulletPointSmall>Unemployment</BulletPointSmall>
                         <BulletPointSmall>Payroll</BulletPointSmall>
