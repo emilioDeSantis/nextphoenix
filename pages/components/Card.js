@@ -16,7 +16,9 @@ export default function Card({ smallText, bigText, index, name, href }) {
             </div>
             <div className="hstack card-footer">
                 <p className="card-footer-name card-footer-text">{name}</p>
-                <Link href={href}>
+                {/* FIX THISQ!! */}
+                {/* <Link href={href}> */}
+                <Link href="services">
                     <div className="hstack card-footer-arrow-container">
                         <p className="card-footer-index card-footer-text">
                             {index}
