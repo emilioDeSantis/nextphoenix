@@ -10,16 +10,14 @@ export default function Navbar() {
     return (
         <Fragment>
             <header className="navbar">
-                <div className="logo"
-                >
-                    Phoenix
-                </div>
+                <div className="logo">Phoenix</div>
                 <HamburgerButton setOpen={setOpen} />
-                <nav className="hstack show-in-desktop"
+                <nav
+                    className="hstack show-in-desktop"
                     style={{
-                        justifyContent: 'end',
-                        height: '100%',
-                        alignItems: 'center',
+                        justifyContent: "end",
+                        height: "100%",
+                        alignItems: "center",
                     }}
                 >
                     {navigationRoutes.map((singleRoute) => {
@@ -34,7 +32,10 @@ export default function Navbar() {
                             </Fragment>
                         );
                     })}
-                    <a className="linkedin-button" href="https://www.linkedin.com/company/phoenix-construction-resources/about/">
+                    <a
+                        className="linkedin-button"
+                        href="https://www.linkedin.com/company/phoenix-construction-resources/about/"
+                    >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             x="0px"
@@ -74,72 +75,82 @@ export default function Navbar() {
                     </a>
                 </nav>
             </header>
-            <nav
+            <button
                 style={{
-                    display: open ? "flex" : "none",
                     position: "fixed",
                     top: 0,
                     zIndex: 10,
                     width: "100vw",
+                    opacity: open ? "100%" : "0%",
+                    transform: open ? "translateX(0)" : "translateX(100vw)",
+                    transition: "0.3s opacity ease",
+                    background: "#fff2",
+                    height: "100vh",
+                }}
+                onClick={() => {
+                    setOpen(false);
+                }}
+            ></button>
+            <nav
+                className="nav-dropdown-container"
+                style={{
+                    position: "fixed",
+                    top: 0,
+                    zIndex: 10,
+                    right: 0,
+                    display: "flex",
+                    flexDirection: "column",
+                    height: "100vh",
+                    transition: "0.3s all ease",
+                    transform: open ? "translateX(0)" : "translateX(100vw)",
+                    alignItems: 'end',
                 }}
             >
                 <button
-                    style={{
-                        width: "100%",
-                    }}
+                    className="close-button"
                     onClick={() => {
                         setOpen(false);
                     }}
-                ></button>
-
-                <div className="nav-dropdown-container">
-                    <ul
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="#fff"
+                        className="w-6 h-6"
                         style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            height: "100vh",
-                            paddingTop: "4rem",
+                            height: "2rem",
                         }}
                     >
-                        {navigationRoutes.map((singleRoute) => {
-                            return (
-                                <Fragment key={singleRoute}>
-                                    <NavigationLink
-                                        setOpen={setOpen}
-                                        href={`/${singleRoute}`}
-                                        text={singleRoute}
-                                        router={router}
-                                    />
-                                </Fragment>
-                            );
-                        })}
-                    </ul>
-
-                    <button
-                        className="close-button"
-                        onClick={() => {
-                            setOpen(false);
-                        }}
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={1.5}
-                            stroke="#fff"
-                            className="w-6 h-6"
-                            style={{
-                                height: "2rem",
-                            }}
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M6 18L18 6M6 6l12 12"
-                            />
-                        </svg>
-                    </button>
-                </div>
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M6 18L18 6M6 6l12 12"
+                        />
+                    </svg>
+                </button>
+                <ul
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        height: "100vh",
+                        paddingTop: "4rem",
+                    }}
+                >
+                    {navigationRoutes.map((singleRoute) => {
+                        return (
+                            <Fragment key={singleRoute}>
+                                <NavigationLink
+                                    setOpen={setOpen}
+                                    href={`/${singleRoute}`}
+                                    text={singleRoute}
+                                    router={router}
+                                />
+                            </Fragment>
+                        );
+                    })}
+                </ul>
             </nav>
         </Fragment>
     );
@@ -159,7 +170,8 @@ function NavigationLink({ href, text, router, setOpen }) {
                     setOpen(false);
                 }}
             >
-                {text.charAt(0).toUpperCase() + text.slice(1)}
+                {/* {text.charAt(0).toUpperCase() + text.slice(1)} */}
+                {text.toUpperCase()}
             </a>
         </Link>
     );

@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import BulletPointSmall from "./components/BulletPointSmall";
+import Card from "./components/Card";
+import NumberedBullet from "./components/NumberedBullet";
 import NumberedList from "./components/NumberedList";
 
 function Home() {
     return (
         <main>
             <div className="navbar-spacer" />
-            {/* <div className="landing-page-container"> */}
             <div className="landing-page-image-container">
                 <Image
                     src="/denzel.png"
@@ -20,211 +21,206 @@ function Home() {
                 <div className="image-gradient" />
             </div>
             <div className="tagline-container">
-                <h1 className="tagline">
-                    GENERAL LABOR SUPPLIER
-                    {/* General Labor Supplier */}
-                </h1>
+                <p className="tagline-prefice">New England's #1</p>
+                <h1 className="tagline">GENERAL LABOR SUPPLIER</h1>
                 <ul className="hstack arrow-buttons-container">
                     <ArrowButton href="services">Hire Phoenix</ArrowButton>
                     <ArrowButton href="apply">Apply Today</ArrowButton>
                 </ul>
             </div>
-            {/* </div> */}
-            <section className="services-preview-container">
-                {/* <div className="card vstack"> */}
+            <section className="landing-page-content-container">
                 <h2>Phoenix is a Construction Labor Provider</h2>
-                {/* <p
-                    style={{
-                        marginBottom: "25vw",
-                    }}
-                >
-                    we supply general laborers for sites that need extra man
-                    power. Phoenix workers can help fill in the gaps for a
-                    project that has a fluctuating need for labor.
-                </p> */}
-                <div className="services-info-bullet-container vstack">
-                    <BulletPointSmall>
-                        For sites that need extra man power
-                        {/* FOR SITES THAT NEED EXTRA MAN POWER */}
-                    </BulletPointSmall>
-                    <BulletPointSmall>
-                        Projects have fluctuating labor needs
-                        {/* PROJECTS HAVE FLUCTUATING LABOR NEEDS */}
-                    </BulletPointSmall>
-                    <BulletPointSmall>
-                        Phoenix workers help fill in the gaps
-                        {/* PHOENIX WORKERS HELP FILL IN THE GAPS */}
-                    </BulletPointSmall>
+                <div className="cards-container">
+                    <Card
+                        smallText={"For sites thats need"}
+                        bigText={"Extra Man Power."}
+                        name={"AUXILIARY LABOR"}
+                        index={"01"}
+                        href={'services'}
+                    />
+                    <Card
+                        smallText={"Projects have a"}
+                        bigText={"Fluctuating Need for Labor."}
+                        name={"VARYING DEMAND"}
+                        index={"02"}
+                        href={'services'}
+                    />
+                    <Card
+                        smallText={"Phoenix workers help to"}
+                        bigText={"Fill in the gaps."}
+                        name={"NEED FULFILLMENT"}
+                        index={"03"}
+                        href={'services'}
+                    />
                 </div>
-                {/* </div> */}
-                {/* <div className="card vastack"> */}
-                <div className="numbered-list-and-image-container">
-                    <h3 className="numbered-list-title">
-                        The Phoenix Advantage
-                    </h3>
-                    <div className="services-preview-image-container image-container">
-                        <Image
-                            src="/sunset.png"
-                            alt="worker"
-                            layout="responsive"
-                            width={2048}
-                            height={2048}
-                        />
-                    </div>
-                    <div className="numbered-list-and-buttons-container">
-                        <NumberedList
-                            // title="The Phoenix Advantage"
-                            list={[
-                                {
-                                    title: "Labor Right Away",
-                                    text: "Depending on your needs we can send workers to your site in as little as 1 day.",
-                                },
-                                {
-                                    title: "Saftey Training",
-                                    text: "You do not have to worry about training. All Phoenix employees take a 10 hour OSHA course.",
-                                },
-                                {
-                                    title: "Cost Effective",
-                                    text: "We offer high quality competative laborers at an inexpensive rate.",
-                                },
-                                {
-                                    title: "Versitle Workers",
-                                    text: "Our employees can help clear debris, remove trash, move materials, and even do demolition.",
-                                },
-                            ]}
-                        />
-
-                        <ul className="hstack arrow-buttons-container">
-                            <ArrowButton href="apply">Hire Phoenix</ArrowButton>
-                            {/* <Link href="services">
-                                    <a
-                                        className="arrow-button hstack"
-                                        style={{
-                                            background: "none",
-                                            color: process.env.color.theme,
-                                        }}
-                                    >
-                                        <div className="arrow-button-text">
-                                            Learn more
-                                        </div>
-
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            strokeWidth={1.5}
-                                            stroke="currentColor"
-                                            className="w-6 h-6"
-                                            style={{
-                                                height: "2rem",
-                                            }}
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                                            />
-                                        </svg>
-                                    </a>
-                                </Link> */}
-                        </ul>
-                    </div>
-                </div>
-                {/* </div> */}
             </section>
-
-            <section className="services-preview-container">
-                {/* <div className="card vstack"> */}
-                <h2>Looking for a Job?</h2>
-                <div className="services-info-bullet-container vstack">
-                    <BulletPointSmall>
-                        Phoenix is always looking for quality tradesmen to add
-                        to our team
-                    </BulletPointSmall>
-                    <BulletPointSmall>
-                        Employees are full-time workers and receive competitive
-                        pay
-                    </BulletPointSmall>
-                    <BulletPointSmall>
-                        Phoenix has a great benefits package
-                    </BulletPointSmall>
+            <div className="numbered-list-and-image-container">
+                <h3 className="numbered-list-title">The Phoenix Advantage</h3>
+                <div className="numbered-list-line"></div>
+                <div className="numbered-list-and-image-sub-container">
+                <div className="services-preview-image-container image-container">
+                    <Image
+                        src="/metal.jpg"
+                        alt="worker"
+                        layout="responsive"
+                        width={2400}
+                        height={2400}
+                    />
                 </div>
-                {/* </div> */}
-                {/* <div className="card vastack"> */}
-                <div className="numbered-list-and-image-container">
-                    <h3 className="numbered-list-title">
-                        What we Offer our Employees
-                    </h3>
-                    <div className="services-preview-image-container image-container">
-                        <Image
-                            src="/timidface.png"
-                            alt="worker"
-                            layout="responsive"
-                            width={2048}
-                            height={2048}
-                        />
-                    </div>
+                <div className="numbered-bullets-container vstack">
+                    {/* <NumberedBullet
+                        title={"Labor Right Away"}
+                        text={
+                            "Depending on your needs we can send workers to your site in as little as 1 day."
+                        }
+                        index={"01"}
+                    />
+                    <NumberedBullet
+                        title={"Saftey Training"}
+                        text={
+                            "You do not have to worry about training. All Phoenix employees take a 10 hour OSHA course."
+                        }
+                        index={"02"}
+                    />
+                    <NumberedBullet
+                        title={"Cost Effective"}
+                        text={
+                            "We offer high quality competative laborers at an inexpensive rate."
+                        }
+                        index={"03"}
+                    />
+                    <NumberedBullet
+                        title={"Versitle Workers"}
+                        text={
+                            "Our employees can help clear debris, remove trash, move materials, and even do demolition."
+                        }
+                        index={"04"}
+                    /> */}
                     <div className="numbered-list-and-buttons-container">
-                        <NumberedList
-                            // title="The Phoenix Advantage"
-                            list={[
-                                {
-                                    title: "Competative Wages",
-                                    text: "Phoenix pays well. You can work for us full time and make extra working overtime hours.",
-                                },
-                                {
-                                    title: "Benefits Package",
-                                    text: "We offer paid hollidays, vacation, health insurence and a 401K retirement plan.",
-                                },
-                                {
-                                    title: "Tradesmen Safety",
-                                    text: "Safety of our tradesmen is our number one concern.",
-                                },
-                                {
-                                    title: "Insurance",
-                                    text: "Phoenix carries complete workman’s comp. and general liability coverage at all times.",
-                                },
-                            ]}
-                        />
-
-                        <ul className="hstack arrow-buttons-container">
-                            <ArrowButton href="apply">Apply Today</ArrowButton>
-                            {/* <Link href="apply">
-                                <a
-                                    className="arrow-button hstack"
-                                    style={{
-                                        background: "none",
-                                        color: process.env.color.theme,
-                                    }}
-                                >
-                                    <div className="arrow-button-text">
-                                        Learn more
-                                    </div>
-
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        strokeWidth={1.5}
-                                        stroke="currentColor"
-                                        className="w-6 h-6"
-                                        style={{
-                                            height: "2rem",
-                                        }}
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                                        />
-                                    </svg>
-                                </a>
-                            </Link> */}
-                        </ul>
-                    </div>
+                    <NumberedList
+                        list={[
+                            {
+                                title: "Labor Right Away",
+                                text: "Depending on your needs we can send workers to your site in as little as 1 day.",
+                            },
+                            {
+                                title: "Safety Training",
+                                text: "You do not have to worry about training. All Phoenix employees take a 10 hour OSHA course.",
+                            },
+                            {
+                                title: "Cost Effective",
+                                text: "We offer high quality competitive laborers at an inexpensive rate.",
+                            },
+                            {
+                                title: "Versatile Workers",
+                                text: "Our employees can help clear debris, remove trash, move materials, and even do demolition.",
+                            },
+                        ]}
+                    />
                 </div>
-                {/* </div> */}
+                    <ArrowButton href="services">Hire Phoenix</ArrowButton>
+                </div>
+                </div>
+            </div>
+
+
+
+
+            <section className="landing-page-content-container">
+                <h2>Phoenix is a Construction Labor Provider</h2>
+                <div className="cards-container">
+                    <Card
+                        smallText={"Phoenix is always looking for quality tradesmen to"}
+                        bigText={"Add to Our Team."}
+                        name={"LABOR FORCE"}
+                        index={"01"}
+                        href={'apply'}
+                    />
+                    <Card
+                        smallText={"Employees are full-time workers and receive"}
+                        bigText={"Competitive Pay."}
+                        name={"SALARY"}
+                        index={"02"}
+                        href={'apply'}
+                    />
+                    <Card
+                        smallText={"Phoenix has a great"}
+                        bigText={"Benefits Package."}
+                        name={"JOB PERKS"}
+                        index={"03"}
+                        href={'apply'}
+                    />
+                </div>
             </section>
+            <div className="numbered-list-and-image-container">
+                <h3 className="numbered-list-title">Looking for a Job?</h3>
+                <div className="numbered-list-line"></div>
+                <div className="numbered-list-and-image-sub-container">
+                <div className="services-preview-image-container image-container">
+                    <Image
+                        src="/timidface.png"
+                        alt="worker"
+                        layout="responsive"
+                        width={2048}
+                        height={2048}
+                    />
+                </div>
+                <div className="numbered-bullets-container vstack">
+                    {/* <NumberedBullet
+                        title={"Labor Right Away"}
+                        text={
+                            "Depending on your needs we can send workers to your site in as little as 1 day."
+                        }
+                        index={"01"}
+                    />
+                    <NumberedBullet
+                        title={"Saftey Training"}
+                        text={
+                            "You do not have to worry about training. All Phoenix employees take a 10 hour OSHA course."
+                        }
+                        index={"02"}
+                    />
+                    <NumberedBullet
+                        title={"Cost Effective"}
+                        text={
+                            "We offer high quality competative laborers at an inexpensive rate."
+                        }
+                        index={"03"}
+                    />
+                    <NumberedBullet
+                        title={"Versitle Workers"}
+                        text={
+                            "Our employees can help clear debris, remove trash, move materials, and even do demolition."
+                        }
+                        index={"04"}
+                    /> */}
+                    <div className="numbered-list-and-buttons-container">
+                    <NumberedList
+                        list={[
+                            {
+                                title: "Competitive Wages",
+                                text: "Phoenix pays well. You can work for us full time and make extra working overtime hours.",
+                            },
+                            {
+                                title: "Benefits Package",
+                                text: "We offer paid holidays, vacation, health insurance and a 401K retirement plan.",
+                            },
+                            {
+                                title: "Tradesmen Safety",
+                                text: "Safety of our tradesmen is our number one concern.",
+                            },
+                            {
+                                title: "Insurance",
+                                text: "Phoenix carries complete workman’s comp. and general liability coverage at all times.",
+                            },
+                        ]}
+                    />
+                </div>
+                    <ArrowButton href="apply">Apply Today</ArrowButton>
+                </div>
+                </div>
+            </div>
+
             <section className="footer-container">
                 <div className="hstack footer-logo-container">
                     <div className="logo">Phoenix</div>
@@ -253,21 +249,25 @@ function Home() {
                     </nav>
                 </section>
                 <section className="hstack footer-phone-container">
-                        <h3 className="footer-header">PHONE</h3>
-                        <p className="footer-text">1234-567-8900</p>
-                    </section>
+                    <h3 className="footer-header">PHONE</h3>
+                    <p className="footer-text">1-800-261-2858</p>
+                </section>
                 <section className="hstack footer-contact-container">
                     <section className="section">
                         <h3 className="footer-header">EMAIL</h3>
-                        <p className="footer-text">pheonix@gmail.com</p>
+                        <p className="footer-text">info@phoenixcr.net</p>
                     </section>
                     <section className="section">
                         <h3 className="footer-header">HOURS</h3>
                         <p className="footer-text">MON-FRI 8AM-6PM</p>
                     </section>
                 </section>
-                <div className="footer-adress">165 Washington Street, Suite A, Winchester, MA 01890</div>
-                <div className="footer-adress">C PHOENIX CONSTRUCTION RECOURCES INCORPERATED 2022.</div>
+                <div className="footer-adress">
+                    165 Washington Street, Suite A, Winchester, MA 01890
+                </div>
+                <div className="footer-adress footer-copyright">
+                Ⓒ PHOENIX CONSTRUCTION RESOURCES INCORPORATED 2022.
+                </div>
             </section>
         </main>
     );
@@ -278,23 +278,25 @@ function ArrowButton({ children, href }) {
         <Link href={href} passHref>
             <a href={href} className="hstack arrow-button">
                 <div className="arrow-button-text">{children}</div>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                    style={{
-                        height: "2rem",
-                    }}
-                >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                    />
-                </svg>
+                <div className="arrow-button-svg-container">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={2}
+                        stroke="currentColor"
+                        className="w-6 h-6"
+                        style={{
+                            width: "100%",
+                        }}
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+                        />
+                    </svg>
+                    </div>
             </a>
         </Link>
     );
