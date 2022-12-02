@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import Bullet from "../components/Bullet";
-import BulletPoint from "../components/BulletPoint";
-import BulletPointSmall from "../components/BulletPointSmall";
+import Bullet from "../../components/Bullet";
+import BulletPoint from "../../components/BulletPoint";
+import BulletPointSmall from "../../components/BulletPointSmall";
 import { NextSeo } from "next-seo";
 
 export default function Apply() {
