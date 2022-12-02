@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { Fragment, useState } from "react";
+import Image from "next/image";
 
 const navigationRoutes = ["home", "services", "apply", "contact"];
 
@@ -10,7 +11,14 @@ export default function Navbar() {
     return (
         <Fragment>
             <header className="navbar">
-                <div className="logo">Phoenix</div>
+                <Link href="/">
+                    <a className="header-logo-container vstack">
+                        <div className="logo">PHOENIX</div>
+                        <div className="logo-subtitle">
+                            Construction Resources Inc.
+                        </div>
+                    </a>
+                </Link>
                 <HamburgerButton setOpen={setOpen} />
                 <nav
                     className="hstack show-in-desktop"
@@ -103,7 +111,7 @@ export default function Navbar() {
                     height: "100vh",
                     transition: "0.3s all ease",
                     transform: open ? "translateX(0)" : "translateX(100vw)",
-                    alignItems: 'end',
+                    alignItems: "end",
                 }}
             >
                 <button
@@ -162,10 +170,7 @@ function NavigationLink({ href, text, router, setOpen }) {
         <Link href={href === "/home" ? "/" : href} passHref>
             <a
                 href={href === "/home" ? "/" : href}
-                className="nav-bar-text"
-                style={{
-                    opacity: isActive ? "1" : "0.5",
-                }}
+                className={isActive ? "nav-bar-text nav-bar-text-active" : "nav-bar-text"}
                 onClick={() => {
                     setOpen(false);
                 }}

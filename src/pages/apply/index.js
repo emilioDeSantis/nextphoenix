@@ -1,40 +1,74 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Fragment } from "react";
+import Bullet from "../components/Bullet";
 import BulletPoint from "../components/BulletPoint";
 import BulletPointSmall from "../components/BulletPointSmall";
-import styles from "./Services.module.css";
+import { NextSeo } from "next-seo";
 
-export default function Services() {
+export default function Apply() {
     return (
-        <div className="light-container">
+        <div className="light-container"><NextSeo
+        title="Your Title"
+        description="This is a demo description"
+        canonical="https://www.example.com"
+        openGraph={{
+            url: "https://www.example.com",
+            title: "Open Graph Title",
+            description: "Open Graph Description",
+            images: [
+                {
+                    url: "https://www.example.com/og-image01.jpg",
+                    width: 800,
+                    height: 600,
+                    alt: "Og Image Alt",
+                    type: "image/jpeg",
+                },
+                {
+                    url: "https://www.example.com/og-image02.jpg",
+                    width: 900,
+                    height: 800,
+                    alt: "Og Image Alt Second",
+                    type: "image/jpeg",
+                },
+                { url: "https://www.example.com/og-image03.jpg" },
+                { url: "https://www.example.com/og-image04.jpg" },
+            ],
+            site_name: "YourSiteName",
+        }}
+        twitter={{
+            handle: "@handle",
+            site: "@site",
+            cardType: "summary_large_image",
+        }}
+    />
+    
             <div className="navbar-spacer" />
             <h1 className="services-header">
-                HOW TO <span className="theme-color">HIRE</span> PHOENIX
+                HOW TO <span className="theme-color">JOIN</span> PHOENIX
                 {/* How to Hire Phoenix */}
             </h1>
             <div className="info-content-container">
                 <div className="info-content-image-container image-container">
                     <Image
-                        src="/dirt.png"
-                        alt="workers1"
-                        layout="responsive"
-                        width={1983}
-                        height={1983}
+                        src="/sunset.png"
+                        alt="sunset"
+                        layout="fill"
+                        objectFit="contain"
+                        sizes="100vw"
+                        priority
                     />
                 </div>
                 <div className="info-content-sub-container vstack">
                     <h2>Contact Us</h2>
                     <BulletPointSmall>
-                        Call us and tell us what you need or fill out the form
-                        online.
+                    Call us or you can submit an application online.
                     </BulletPointSmall>
                     <BulletPointSmall>
-                        Schedule a meeting with us to finalize a deal.
+                    We will have you come into our office to see if you are a
+                    good fit.
                     </BulletPointSmall>
                     <BulletPointSmall>
-                        We will send people out to your site as soon as
-                        possible.
+                    Once hired you can begin working right away.
                     </BulletPointSmall>
                     <div className="hstack servics-contact-container">
                         {/* <Link href="services">
@@ -81,7 +115,7 @@ export default function Services() {
 
                         <div className="hstack card-footer-arrow-container">
                             <p className="card-footer-index card-footer-text">
-                                HIRE US
+                                APPLY
                             </p>
                             <div className="arrow-spacer"></div>
                             <div className="double-arrow-svg-container">
@@ -106,54 +140,6 @@ export default function Services() {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <h1 className="services-header">HOW PHOENIX WORKS</h1>
-
-            <div className="info-content-container">
-                <div className="info-content-image-container image-container">
-                    <Image
-                        src="/feet.png"
-                        alt="workers1"
-                        layout="responsive"
-                        width={4096}
-                        height={2731}
-                    />
-                </div>
-                <div className="info-content-sub-container vstack">
-                    <h2>Payment</h2>
-                    <ul className="services-bullet-container">
-                        <BulletPointSmall>
-                            Our Laborers fill out a timesheet every week.
-                        </BulletPointSmall>
-                        <BulletPointSmall>
-                            You sign off on the timesheet.
-                        </BulletPointSmall>
-                        <BulletPointSmall>
-                            Pay Phoenix once per week for all workers.
-                        </BulletPointSmall>
-                        <BulletPointSmall>
-                            We handle paying our employees.
-                        </BulletPointSmall>
-                    </ul>
-                </div>
-
-                <div className="info-content-sub-container vstack">
-                    <h2>We Manage the Rest</h2>
-                    <ul className="services-bullet-container">
-                        <BulletPointSmall>Personal Interviews</BulletPointSmall>
-                        <BulletPointSmall>Reference Checks</BulletPointSmall>
-                        <BulletPointSmall>
-                            OSHA Safety Training
-                        </BulletPointSmall>
-                        <BulletPointSmall>All Insurance</BulletPointSmall>
-                        <BulletPointSmall>{"Workman's Comp"}</BulletPointSmall>
-                        <BulletPointSmall>General Liability</BulletPointSmall>
-                        <BulletPointSmall>Unemployment</BulletPointSmall>
-                        <BulletPointSmall>Payroll</BulletPointSmall>
-                        <BulletPointSmall>Payroll Taxes</BulletPointSmall>
-                    </ul>
                 </div>
             </div>
         </div>

@@ -14,6 +14,10 @@ const nextConfig = {
             borderRadius: "0.2rem",
         },
     },
+    i18n: {
+        locales: ["en"],
+        defaultLocale: "en",
+    },
 };
 
 module.exports = nextConfig;

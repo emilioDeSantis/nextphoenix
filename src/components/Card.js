@@ -19,7 +19,7 @@ export default function Card({ smallText, bigText, index, name, href }) {
                 {/* FIX THISQ!! */}
                 {/* <Link href={href}> */}
                 <Link href="services">
-                    <div className="hstack card-footer-arrow-container">
+                    <a className="hstack card-footer-arrow-container">
                         <p className="card-footer-index card-footer-text">
                             {index}
                         </p>
@@ -44,7 +44,7 @@ export default function Card({ smallText, bigText, index, name, href }) {
                                 />
                             </svg>
                         </div>
-                    </div>
+                    </a>
                 </Link>
             </div>
         </div>
