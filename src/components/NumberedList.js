@@ -1,7 +1,6 @@
 import { Fragment } from "react";
 
 export default function NumberedList({ title, list }) {
-    console.log(list);
     return (
         <div className="numbered-list-container">
             {list?.map((element, index) => {

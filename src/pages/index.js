@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import BulletPointSmall from "./components/BulletPointSmall";
-import Card from "./components/Card";
-import NumberedBullet from "./components/NumberedBullet";
-import NumberedList from "./components/NumberedList";
+import BulletPointSmall from "../components/BulletPointSmall";
+import Card from "../components/Card";
+import NumberedBullet from "../components/NumberedBullet";
+import NumberedList from "../components/NumberedList";
 import { NextSeo } from "next-seo";
 
 function Home() {
