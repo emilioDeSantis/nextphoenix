@@ -10,7 +10,7 @@ function Home() {
     return (
         <main>
             <NextSeo
-                title="Your Title"
+                title="Hire Construction Labourers in New England | PHOENIX"
                 description="This is a demo description"
                 canonical="https://www.example.com"
                 openGraph={{
