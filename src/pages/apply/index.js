@@ -8,7 +8,7 @@ import { NextSeo } from "next-seo";
 export default function Apply() {
     return (
         <div className="light-container"><NextSeo
-        title="Your Title"
+        title="Hire Construction Labourers in New England | PHOENIX"
         description="This is a demo description"
         canonical="https://www.example.com"
         openGraph={{
